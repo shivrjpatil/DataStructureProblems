@@ -10,7 +10,7 @@ namespace DataStructureProblems274
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Linked List\n2.Stack");
+            Console.WriteLine("1.Linked List\n2.Stack\n3.Queue");
             int option = Convert.ToInt32(Console.ReadLine());
            switch (option)
            {
@@ -37,6 +37,32 @@ namespace DataStructureProblems274
                     stack.Pop();
                     stack.Display();
                     break;
+                case 3:
+                    GenericQueue<int> queue = new GenericQueue<int>();
+                    queue.Enqueue(23);
+                    queue.Enqueue(78);
+                    queue.Enqueue(24);
+                    queue.Display();
+                    queue.Dequeue();
+                    queue.Display();
+                    GenericQueue<double> queue2 = new GenericQueue<double>();
+                    queue2.Enqueue(2.3);
+                    queue2.Enqueue(7.8);
+                    queue2.Enqueue(2.4);
+                    queue2.Display();
+                    queue2.Dequeue();
+                    queue2.Display();
+
+                    GenericQueue<char> queue3 = new GenericQueue<char>();
+                    queue3.Enqueue('a');
+                    queue3.Enqueue('b');
+                    queue3.Enqueue('c');
+                    queue3.Display();
+                    queue3.Dequeue();
+                    queue3.Display();
+
+                    break;
+                   
            }
             Console.ReadLine();
         }
