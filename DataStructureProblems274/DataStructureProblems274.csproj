@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuiltInLinkedList.cs" />
+    <Compile Include="BuiltInQueue.cs" />
     <Compile Include="BuiltInStack.cs" />
     <Compile Include="GenericClassCustomLinkedList.cs" />
     <Compile Include="GenericCustomeStack.cs" />
