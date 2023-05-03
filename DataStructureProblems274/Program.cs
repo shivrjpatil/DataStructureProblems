@@ -10,7 +10,7 @@ namespace DataStructureProblems274
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Linked List\n2.Stack\n3.Queue");
+            Console.WriteLine("1.Linked List\n2.Stack\n3.Queue\n4.Built-In LinkedList");
             int option = Convert.ToInt32(Console.ReadLine());
            switch (option)
            {
@@ -61,6 +61,10 @@ namespace DataStructureProblems274
                     queue3.Dequeue();
                     queue3.Display();
 
+                    break;
+                case 4:
+                    BuiltInLinkedList built=new BuiltInLinkedList();
+                    built.LinkedList();
                     break;
                    
            }
